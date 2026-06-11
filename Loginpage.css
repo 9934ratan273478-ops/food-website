@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.body-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 900px;
+  height: 625px;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* LEFT SIDE */
+
+.login-box {
+  width: 50%;
+  padding: 50px;
+  background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("https://media.istockphoto.com/id/515373062/vector/food-seamless-background.jpg?s=612x612&w=0&k=20&c=hexa_lBms2zsFxEHASUeYhNu17i8JfV3TGOoDark-tk=");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #EEDFCB;
+  
+}
+
+.login-box p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+/* PASSWORD BOX */
+
+.password-box {
+  position: relative;
+}
+
+.password-box i {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  color: gray;
+  cursor: pointer;
+}
+
+.forgot {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #EEDFCB, #8B6A46);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: rgb(0, 191, 255);
+  color: #8B6A46;
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+.lavelcolor{
+  color:gray;
+}
+
+/* LINE */
+
+.line {
+  margin: 25px 0;
+  text-align: center;
+  position: relative;
+}
+
+.line span {
+  padding: 0 10px;
+  position: relative;
+  color:gray;
+  font-size: 14px;
+}
+
+/* SOCIAL BUTTONS */
+
+.social-btn {
+  display: flex;
+  gap: 15px;
+}
+
+.social-btn button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.social-btn button:hover {
+  color: #8B6A46;
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.google i {
+  color: red;
+}
+
+.facebook i {
+  color: blue;
+}
+
+/* SIGNUP */
+
+.signup {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.signup span {
+  color: #8B6A46;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.signup span:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SIDE */
+
+.image-box {
+  width: 50%;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ========== MOBILE RESPONSIVE (576px) ========== */
+
+@media (max-width: 576px) {
+
+  .body-container{
+    padding: 15px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .container{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  /* IMAGE SECTION */
+
+  .image-box{
+    display:none;
+  }
+
+
+  /* LOGIN SECTION */
+
+  .login-box{
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .login-box h1{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .login-box p{
+    text-align: center;
+    font-size: 14px;
+  }
+
+  form label{
+    font-size: 14px;
+  }
+
+  form input{
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .password-box i{
+    top: 13px;
+    right: 12px;
+  }
+
+  .forgot{
+    font-size: 13px;
+  }
+
+  .login-btn{
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .line{
+    margin: 20px 0;
+  }
+
+  .line span{
+    font-size: 13px;
+  }
+
+  .social-btn{
+    flex-direction: column;
+  }
+
+  .social-btn button{
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .signup{
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+}
